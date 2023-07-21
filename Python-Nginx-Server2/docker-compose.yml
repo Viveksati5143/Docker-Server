@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: nginx-app
+    container_name: nginx-container
+
+    ports:
+      - 80:80
+    restart: always
+
+    networks:
+      - my-network
+  
+  flask:
+    image: python-app
+    container_name: Python-container
+    ports:
+      - 8080:8080
+    restart: always  
+    networks:
+      - my-network
+
+networks:
+  my-network:
