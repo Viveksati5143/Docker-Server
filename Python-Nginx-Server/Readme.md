@@ -20,9 +20,9 @@
             cd python-app
             vim app.py
             vim Dockerfile
-            vim nginx_conf
+            mkdir nginx_conf
             cd nginx_conf
-            vim nginx_conf
+            vim nginx.conf
             vim Dockerfile
         5. cd ..
         6. docker build -t python-server . <!--sudo docker...(if doesn't work) -->
